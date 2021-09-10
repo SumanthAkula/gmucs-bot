@@ -121,3 +121,4 @@ api/src/core/conf.py
 docker-compose.yml
 new/
 archive/
+slash_creator.py
