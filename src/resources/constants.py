@@ -32,7 +32,7 @@ HTTP_RETRY_LIMIT = 5
 
 DEFAULTS = {
     "promptDelete": True,
-    "prefix": "?"
+    "prefix": ":V "
 }
 
 MODULE_DIR = [
@@ -49,7 +49,7 @@ PROMPT = {
 
 ARROW = "\u2192"
 
-OWNER = 84117866944663552
+OWNER = 177812127363497984
 
 TRANSFER_COOLDOWN = 5
 
@@ -78,8 +78,5 @@ TABLE_STRUCTURE = {
     ]
 }
 
-PLAYING_STATUS = "{prefix}help | {prefix}invite"
+PLAYING_STATUS = "{prefix}help"
 
-AVATARS = {
-    "PRIDE": "https://cdn.discordapp.com/attachments/480614508633522176/730969660010266644/rainbow_resized.png"
-}
