@@ -15,7 +15,7 @@ get_guild_value = Bloxlink.get_module("cache", attrs=["get_guild_value"])
 
 
 BOT_ID = BOTS[RELEASE]
-COMMANDS_URL = f"https://discord.com/api/v8/applications/{BOT_ID}/commands" if RELEASE != "LOCAL" else f"https://discord.com/api/v8/applications/{BOT_ID}/guilds/439265180988211211/commands"
+COMMANDS_URL = f"https://discord.com/api/v8/applications/{BOT_ID}/commands" if RELEASE != "LOCAL" else f"https://discord.com/api/v8/applications/{BOT_ID}/guilds/842537684785823755/commands"
 PREFIX = DEFAULTS["prefix"]
 
 @Bloxlink.module
@@ -271,7 +271,8 @@ class Commands(Bloxlink.Module):
                                 except NotFound:
                                     raise CancelCommand
 
-                        guild_data = guild_data or (guild and (await self.r.table("guilds").get(guild_id).run() or {"id": guild_id})) or {}
+                        # guild_data = guild_data or (guild and (await self.r.table("guilds").get(guild_id).run() or {"id": guild_id})) or {}
+                        guild_data = {"id": guild_id}
 
                         fn = command.fn
                         subcommand_attrs = {}
