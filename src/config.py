@@ -1,4 +1,4 @@
-TOKEN = "ODg1MzM2MDkzNzExNTMyMDgy.YTljfQ.gWXFuqVXXZl25KUG_sZQ6ca3PwA"
+TOKEN = None
 PREFIX = ":V "
 
 WEBHOOKS = {
