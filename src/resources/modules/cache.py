@@ -42,7 +42,7 @@ class Cache(Bloxlink.Module):
         guild_data = await self.get(f"guild_data:{guild.id}")
 
         if guild_data is None:
-            guild_data = await self.r.table("guilds").get(str(guild.id)).run() or {"id": str(guild.id)}
+            guild_data = {"id": str(guild.id)}
 
             await self.set(f"guild_data:{guild.id}", guild_data, check_primitives=False)
 
